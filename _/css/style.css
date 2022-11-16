@@ -1,113 +1,127 @@
-*{
-    color: #3D3942; 
+* {
+  color: #dfd9d9;
+  font-family: "Quicksand";
+  background-color: #120633;
 }
+
+/* header section */
+.navbar-text {
+  font-weight: bold;
+}
+
 textarea {
-    width: 95%;
-    border: 5px solid #FFE066;
-    padding: 5px;
-    margin: 2px 0;
+  width: 100%;
+  border: 3px solid #7538a6;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px 0;
 }
 
 .box {
-    background-color: #F4F4F4;
-    width: 46%;
-    padding: 11px;
-    border-radius: 10px;
-    float: left;
-    margin: 5px;
-    border: 1px solid #F5DEB3; 
+  background-color: #120633;
+  width: 46%;
+  padding: 11px;
+  border-radius: 10px;
+  float: left;
+  margin: 5px;
+  border: 3px solid #7538a6;
 }
 
-.graph{
-    overflow-x: scroll;
-    max-height: 650px; 
+.graph {
+  overflow-x: scroll;
+  max-height: 650px;
 }
 
 .box h2 {
-    border-bottom: 1px solid rgb(229, 229, 229);
-    border-left: 1px solid rgb(244, 244, 244);
-    padding: 5px;
+  /* border-bottom: 1px solid rgb(229, 229, 229); */
+  /* border-left: 1px solid rgb(244, 244, 244); */
+  padding: 5px;
 }
 
 .box #result {
-    background: #F25F5C;
-    color: #fff; 
-    padding: 5px;
-    word-wrap: break-word;
+  background: #7538a6;
+  color: #fff;
+  padding: 5px;
+  word-wrap: break-word;
 }
 
 /* table */
 table {
-    width: 100%;
-    box-shadow: -3px 3px #808080; 
+  width: 100%;
+  /* box-shadow: -3px 3px #808080; */
 }
 
-table, th, td {
-    border-collapse: collapse;
+table,
+th,
+td {
+  border-collapse: collapse;
 }
 
-table, th {
-    border-bottom: 2px solid white;
+table,
+th {
+  border-bottom: 2px solid white;
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
+th,
+td {
+  padding: 10px;
+  text-align: left;
 }
 
 table tr:nth-child(even) {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 table tr:nth-child(odd) {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 table tr {
-    overflow: hidden;
-    width: 20px;
+  overflow: hidden;
+  width: 20px;
 }
 
 table th {
-    background-color: #F25F5C;
-    color: #fff;
+  background-color: #7538a6;
+  color: #fff;
 }
 
 .code {
-    word-break: break-all;
+  word-break: break-all;
 }
 /* end table */
 
 /* Graph */
 
 .node circle {
-    fill: #fff;
-    stroke: #DCDCDC;
+  fill: #fff;
+  stroke: #dcdcdc;
 }
 
 .node text {
-    font: 14px sans-serif;
-    font-weight: bold;
+  color: white;
+  font: 14px sans-serif;
+  font-weight: bold;
 }
 
 .link {
-    fill: none;
-    stroke: #ccc;
+  fill: none;
+  stroke: #ccc;
 }
 /* End graph*/
 
 /*Media for small screens*/
 @media all and (max-width: 800px) {
-    .deCoder {
-        width: 90%;
-        float: left;
-    }
-    .enCoder {
-        width: 90%;
-        float: left;
-    }
-    .graph {
-        width: 90%;
-        float: left;
-    }
+  .deCoder {
+    width: 90%;
+    float: left;
+  }
+  .enCoder {
+    width: 90%;
+    float: left;
+  }
+  .graph {
+    width: 90%;
+    float: left;
+  }
 }

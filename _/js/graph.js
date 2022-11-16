@@ -128,7 +128,8 @@ function drawGraph(HuffmanTable) {
         })
         .text(function(d) {
             return d.code ? d.code.substr(d.code.length - 1) : 1
-        });
+        }).
+        style('fill', '#fff');
 
 
     //PATH 

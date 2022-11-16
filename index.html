@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0, minimum-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0, minimum-scale=1"
+    />
     <title>Huffman Encoding</title>
-    <link rel="stylesheet" href="_/css/style.css">
-</head>
+    <link rel="stylesheet" href="_/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    />
+  </head>
 
-<body>
-    <header>
-        <h1> Huffman Coding </h1>
-    </header>
+  <body>
+    <!-- Header -->
+    <div class="container-fluid-nav text-center">
+      <h1 class="navbar-text">Huffman Coding Tree Generator</h1>
+    </div>
+
     <!-- Encoder -->
     <div class="box enCoder">
-        <h2>Encoder</h2>
-        <textarea type="text" id="enCoder" placeholder="type text here e.g 'Mississippi river'" autofocus></textarea>
-        <table>
-            <tbody>
-                <tr>
-                    <th>Character</th>
-                    <th>Frequency</th>
-                    <th>%</th>
-                    <th>Code</th>
-                </tr>
-            </tbody>
-        </table>
+      <h2>Encoder</h2>
+      <textarea
+        type="text"
+        id="enCoder"
+        placeholder="Enter text here e.g 'Pepsi'"
+        autofocus
+      ></textarea>
+      <table>
+        <tbody>
+          <tr>
+            <th>Character</th>
+            <th>Count</th>
+            <th>%</th>
+            <th>Code</th>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
     <!-- Decoder -->
     <div class="box deCoder">
-        <h2>Decoder</h2>
-        <textarea disabled type="text" id="deCoder" placeholder="insert the code [takes binary character 0 or 1]"></textarea>
-        <div id="result"></div>
+      <h2>Decoder</h2>
+      <textarea
+        disabled
+        type="text"
+        id="deCoder"
+        placeholder="Enter the binary code"
+      ></textarea>
+      <div id="result"></div>
     </div>
     <!-- Graph -->
     <div class="box graph">
-        <h2>Graph</h2>
+      <h2>Huffman Tree</h2>
     </div>
 
     <script src="_/js/HuffmanCoding.js"></script>
     <script src="_/js/script.js"></script>
     <script src="_/js/d3js.js"></script>
     <script src="_/js/graph.js"></script>
-</body>
-
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </body>
 </html>
